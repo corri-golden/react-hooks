@@ -1,7 +1,9 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import './AnimalCard.css'
 
-const AnimalCard = () => {
+//props is simply an object
+const AnimalCard = (props) => {
   return (
     <div className="card">
       <div className="card-content">
@@ -9,10 +11,15 @@ const AnimalCard = () => {
           <img src={require("./dog.svg")} alt="My Dog" />
         </picture>
         <h3>
-          Name: <span className="card-petname">Doodles</span>
+        Name: <span className="card-petname">{props.animal.name}</span>
         </h3>
-        <p>Breed: Poodle</p>
+        <p>Breed: {props.animal.breed}</p>
+        <p>Caretaker: {props.animal.employeeId}</p>
       </div>
+      <button onClick={() => {props.deleteAnimal(props.animal.id)}} className="delete">Release Animal</button>
+      <Link to={`/animals/${props.animal.id}`}>
+      <button>Details</button>
+      </Link>
     </div>
   );
 };

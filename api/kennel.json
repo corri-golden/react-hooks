@@ -1,0 +1,84 @@
+{
+  "animals": [
+    {
+      "id": 1,
+      "name": "Doodles",
+      "breed": "Poodle",
+      "employeeId": 1
+    },
+    {
+      "id": 2,
+      "name": "Decker",
+      "breed": "German Shepherd",
+      "employeeId": 2
+    },
+    {
+      "id": 4,
+      "name": "Brutus",
+      "breed": "Hotdog",
+      "employeeId": 3
+    },
+    {
+      "name": "Chuck",
+      "breed": "Chow",
+      "id": 5,
+      "employeeId": 3
+    },
+    {
+      "name": "Tiger King",
+      "breed": "Tiger",
+      "employeeId": "3",
+      "id": 6
+    },
+    {
+      "name": "Dori",
+      "breed": "Stray",
+      "employeeId": "1",
+      "id": 7
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Jessica Younker",
+      "role": "Office Manager"
+    },
+    {
+      "id": 2,
+      "name": "Jordan Nelson",
+      "role": "Assistant Manager"
+    },
+    {
+      "name": "Lina Bracamonte",
+      "role": "Groomer",
+      "id": 3
+    }
+  ],
+  "owners": [
+    {
+      "id": 1,
+      "number": "615-444-5545",
+      "name": "Keith Turtleneck"
+    },
+    {
+      "id": 5,
+      "number": "615-244-3333",
+      "name": "Jerry Seinfield"
+    },
+    {
+      "name": "Mark Cuban",
+      "number": "971-334-4556",
+      "id": 6
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Nashville West"
+    },
+    {
+      "id": 4,
+      "name": "SouthSide"
+    }
+  ]
+}

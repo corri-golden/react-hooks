@@ -1,12 +1,11 @@
 import React, {useState, useEffect } from 'react';
-import Dropdown from 'react-dropdown';
 import AnimalManager from '../../modules/AnimalManager';
 import EmployeeManager from '../../modules/EmployeeManager'
 import './AnimalForm.css'
 
 const AnimalForm = props => {
   //creating an empty object so we can put info there.
-  const [animal, setAnimal, setEmployee] = useState({ name: "", breed: "", employeeId: "" });
+  const [animal, setAnimal] = useState({ name: "", breed: "", employeeId: "" });
   //so the button can't be clicked until the right moment
   const [isLoading, setIsLoading] = useState(false);
   const [employees, setEmployees] = useState([]);
@@ -65,8 +64,7 @@ const AnimalForm = props => {
               //handlefieldchange is going to set the value on the event in state.  taking the values and setting them on state
               onChange={handleFieldChange}
               id="name"
-              placeholder="Animal name"
-            />
+              placeholder="Animal name"/>
             <label htmlFor="name">Name</label>
             <input
               type="text"
